@@ -1,0 +1,133 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background-color: #202124;
+  padding: 0 1rem;
+}
+
+.light-icon {
+  color: #f5ba13;
+  width: 1.75rem;
+  height: 1.3rem;
+}
+
+header {
+  display: flex;
+  margin: auto -1rem;
+  padding: 1rem;
+  box-shadow: 0 0 0.7rem 0 rgba(0, 0, 0, 0.3);
+}
+
+header h3 {
+  color: #e8eaed;
+  font-weight: 400;
+}
+
+header span {
+  color: #f5ba13;
+}
+.notes-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  align-content: flex-start;
+}
+
+.note {
+  border-radius: 0.5rem;
+  border: 1.5px solid #5f6368;
+  padding: 0.8rem;
+  width: 15rem;
+  margin: 0.5rem;
+}
+
+.note h1 {
+  font-size: 1.1rem;
+  margin-bottom: 0.7rem;
+  font-weight: 500;
+  color: #e8eaed;
+  overflow-wrap: break-word;
+}
+
+.note p {
+  font-size: 1rem;
+  color: #b7b7b7;
+  margin-bottom: 0.6rem;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.delete-icon {
+  position: relative;
+  float: right;
+  margin-right: 0.3rem;
+  color: #6c695f;
+  width: 1rem;
+  height: 1rem;
+  cursor: pointer;
+}
+
+form {
+  position: relative;
+  width: 30rem;
+  margin: 1.9rem auto 1.9rem auto;
+  border: 1.5px solid #5f6368;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 0.7rem 0 rgba(0, 0, 0, 0.3);
+}
+
+form input {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+form textarea {
+  font-size: 1rem;
+}
+form input,
+form textarea {
+  background-color: #202124;
+  color: #e8eaed;
+  width: 100%;
+  border: none;
+  padding: 0.25rem;
+  outline: none;
+  font-family: inherit;
+  resize: none;
+}
+
+form button {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  right: 2.25rem;
+  bottom: -1.3rem;
+  color: #fff;
+  background-color: #f5ba13;
+  border: none;
+  border-radius: 50%;
+  height: 2.75rem;
+  width: 2.75rem;
+  box-shadow: 0 1px 0.2rem rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  outline: none;
+}
+
+form button:hover {
+  background-color: #202124;
+  border: 1px solid #5f6368;
+  color: #f5ba13;
+}
+
+.add-icon {
+  height: 1.3rem;
+  width: 1.3rem;
+  font-weight: 200;
+}
