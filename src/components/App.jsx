@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import Header from "./Header";
 import Note from "./Note";
 import InputArea from "./InputArea";
+import Background from "./Background";
+// import { FaPlus } from "react-icons/fa";
 
 function App() {
   const [notes, updateNotes] = useState([]);
@@ -18,6 +20,16 @@ function App() {
         return id !== index;
       });
     });
+  }
+
+  // console.log(notes.length);
+
+  function isArrayEmpty(){
+    if(notes.length===0){
+      console.log(notes.length);
+      return true;
+    }
+    return false;
   }
 
   return (
@@ -37,6 +49,7 @@ function App() {
           );
         })}
       </div>
+      {isArrayEmpty()? <Background/> : null}
     </div>
   );
 }

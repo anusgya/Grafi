@@ -131,3 +131,21 @@ form button:hover {
   width: 1.3rem;
   font-weight: 200;
 }
+
+.background-container{
+  display: flex;
+  margin-top: 10rem;
+  flex-direction: column;
+  color:#525252;
+  /* justify-content: center; */
+  align-items: center;
+  width: 100%;
+}
+
+
+.background-container h2{
+  /* position: absolute; */
+  /* color:#525252; */
+  margin-bottom:0.25rem;
+  font-weight: 400;
+}
